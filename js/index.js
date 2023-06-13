@@ -197,10 +197,14 @@ if (window.localStorage.getItem('showBull') !== null) {
   if (localStorage.getItem('showBull') === 'block') {
     nav.style.display = 'block'
     document.querySelector('.yah').classList.add('active')
+        document.querySelector('.not').classList.remove('active')
+
   }
   if (window.localStorage.getItem('showBull') !== null) {
     nav.style.display = 'none'
     document.querySelector('.not').classList.add('active')
+        document.querySelector('.yah').classList.remove('active')
+
   }
 }
 
